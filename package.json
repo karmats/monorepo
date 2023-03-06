@@ -1,0 +1,11 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "Monorepo with yarn",
+  "main": "index.js",
+  "repository": "git@github.com:karmats/monorepo.git",
+  "author": "Mats Roshauw <mats.roshauw@appva.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["packages/*"]
+}
