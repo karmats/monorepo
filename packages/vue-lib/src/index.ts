@@ -1,3 +1,2 @@
-import AppvaButton from "./components/AppvaButton.vue";
-
-export { AppvaButton };
+export * from "./components";
+export * from "./composables";
