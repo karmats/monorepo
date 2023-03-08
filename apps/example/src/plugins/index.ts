@@ -7,6 +7,7 @@
 // Plugins
 import { loadFonts } from './webfontloader'
 import vuetify from './vuetify'
+import '@karmats/vue-lib/style.css'
 
 // Types
 import type { App } from 'vue'

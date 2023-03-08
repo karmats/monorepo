@@ -10,10 +10,10 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       // Name of the library.
-      name: "KarmatsVue",
+      name: "@karmats/vue",
       // We are building for CJS and ESM, use a function to rename automatically files.
       // Example: my-component-library.esm.js
-      fileName: 'karmats-vue',
+      fileName: 'karmats-vue-lib',
     },
     rollupOptions: {
       // Vue is provided by the parent project, don't compile Vue source-code inside our library.
