@@ -1,7 +1,12 @@
 {
   "name": "@karmats/vue-lib",
-  "files": ["dist"],
+  "version": "0.0.1",
+  "private": true,
+  "files": [
+    "dist"
+  ],
   "types": "dist/types",
+  "type": "module",
   "main": "./dist/karmats-vue-lib.umd.cjs",
   "module": "./dist/karmats-vue-lib.js",
   "exports": {
@@ -11,20 +16,17 @@
     },
     "./style.css": "./dist/style.css"
   },
-  "private": true,
-  "version": "0.0.1",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build && yarn build:types",
+    "build": "yarn clean && vue-tsc && vite build && yarn build:types",
     "build:types": "vue-tsc --project tsconfig.types.json",
-    "preview": "vite preview"
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "vue": "^3.2.45"
   },
   "devDependencies": {
     "@babel/types": "^7.21.2",
+    "@types/node": "^18.14.6",
     "@vitejs/plugin-vue": "^4.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.1.0",

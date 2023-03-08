@@ -1,9 +1,10 @@
 {
-  "include": ["src/components/**/*", "src/index.ts"],
+  "include": ["src/**/*"],
   "compilerOptions": {
     "emitDeclarationOnly": true,
     "declaration": true,
     "outDir": "dist/types",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "lib": ["ESNext", "DOM"]
   }
 }
