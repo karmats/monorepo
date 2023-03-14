@@ -6,6 +6,5 @@
   "repository": "git@github.com:karmats/monorepo.git",
   "author": "Mats Roshauw <mats.roshauw@appva.com>",
   "license": "MIT",
-  "private": true,
-  "workspaces": ["packages/*"]
+  "private": true
 }

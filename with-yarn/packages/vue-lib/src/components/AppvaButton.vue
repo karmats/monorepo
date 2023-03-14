@@ -7,11 +7,12 @@
   </button>
 </template>
 <script lang="ts" setup>
+import { colors } from "@karmats/fundamentals";
 defineProps<{ size: "l" | "s" }>();
 </script>
 <style scoped>
 .btn {
-  background-color: #4caf50;
+  background-color: v-bind(colors.primary[70].value);
   border: none;
   color: white;
   padding: 8px 16px;

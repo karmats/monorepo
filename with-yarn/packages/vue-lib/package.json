@@ -22,7 +22,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "@karmats/fundamentals": "*"
   },
   "devDependencies": {
     "@babel/types": "^7.21.2",
