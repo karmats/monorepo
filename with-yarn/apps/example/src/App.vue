@@ -24,8 +24,8 @@
 <script setup lang="ts">
 import { AppvaButton, useMouse } from "@karmats/vue-lib";
 import { colors } from "@karmats/fundamentals/colors";
-import { mdiAbTesting } from "@karmats/fundamentals/dist/icons";
-import { SOME_CONST } from '@karmats/fundamentals';
+import { mdiAbTesting } from "@karmats/fundamentals/icons";
+import { SOME_CONST } from "@karmats/fundamentals";
 // import { computed } from "vue";
 
 const { x, y } = useMouse();

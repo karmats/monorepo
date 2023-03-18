@@ -3,8 +3,8 @@
   "compilerOptions": {
     "emitDeclarationOnly": true,
     "declaration": true,
-    "outDir": "dist",
-    "baseUrl": ".",
-    "lib": ["ESNext", "DOM"]
+    "outDir": "./dist",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "nodenext"
   }
 }
