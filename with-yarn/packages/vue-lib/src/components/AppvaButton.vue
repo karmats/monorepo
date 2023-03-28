@@ -7,7 +7,7 @@
   </button>
 </template>
 <script lang="ts" setup>
-import { colors } from "@karmats/fundamentals";
+import { colors } from "@karmats/fundamentals/colors";
 defineProps<{ size: "l" | "s" }>();
 </script>
 <style scoped>
