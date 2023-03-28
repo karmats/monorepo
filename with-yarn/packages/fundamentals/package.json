@@ -3,41 +3,64 @@
   "version": "1.0.0",
   "description": "Fundamental UI components such as colors and icons",
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.cjs",
   "files": [
-    "dist",
-    "./colors.d.ts",
-    "./icons.d.ts"
+    "dist"
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./index.d.ts"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
     },
     "./colors": {
-      "import": "./dist/colors.js",
-      "require": "./dist/colors.cjs",
-      "types": "./colors.d.ts"
+      "import": {
+        "types": "./dist/colors.d.ts",
+        "default": "./dist/colors.js"
+      },
+      "require": {
+        "types": "./dist/colors.d.ts",
+        "default": "./dist/colors.cjs"
+      }
     },
     "./icons": {
-      "import": "./dist/icons.js",
-      "require": "./dist/icons.cjs",
-      "types": "./icons.d.ts"
+      "import": {
+        "types": "./dist/types/icons.d.ts",
+        "default": "./dist/icons.js"
+      },
+      "require": {
+        "types": "./dist/types/icons.d.ts",
+        "default": "./dist/icons.cjs"
+      }
     }
   },
+  "typesVersions": {
+    "*": {
+      "colors": [
+        "./dist/colors.d.ts"
+      ],
+      "icons": [
+        "./dist/icons.d.ts"
+      ]
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
   "author": "Mats Roshauw",
   "license": "MIT",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && yarn build:types",
     "build:types": "tsc"
   },
   "devDependencies": {
     "@mdi/js": "^7.1.96",
     "tsc": "^2.0.4",
     "typescript": "^4.9.5",
-    "vite": "^4.1.4",
-    "vite-plugin-dts": "^2.1.0"
+    "vite": "^4.1.4"
   }
 }

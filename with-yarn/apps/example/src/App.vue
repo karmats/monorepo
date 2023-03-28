@@ -3,6 +3,7 @@
     <v-main>
       <AppvaButton size="s">Hello monorepo</AppvaButton>
       <p>x: {{ x }}, y: {{ y }}</p>
+      <v-icon :icon="mdiAbTesting" />
       <!-- <h2 class="text-h6">Appva icons</h2>
       <ul>
         <li v-for="icon in appvaIcons" :key="icon.name">

@@ -4,7 +4,6 @@
     "emitDeclarationOnly": true,
     "declaration": true,
     "outDir": "./dist",
-    "lib": ["ESNext", "DOM"],
-    "moduleResolution": "nodenext"
+    "lib": ["ESNext", "DOM"]
   }
 }
