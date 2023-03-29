@@ -1,17 +1,19 @@
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from "@storybook/vue3";
 
-import Button from './Button.vue';
+import Button from "./Button.vue";
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/vue/writing-stories/introduction
 const meta: Meta<typeof Button> = {
-  title: 'Example/Button',
+  title: "Example/Button",
   component: Button,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/7.0/vue/writing-docs/docs-page
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
-    size: { control: 'select', options: ['x-small', 'small', 'regular', 'large', 'x-large'] },
-    backgroundColor: { control: 'color' },
-    onClick: { action: 'clicked' },
+    size: {
+      control: "select",
+      options: ["x-small", "small", "regular", "large", "x-large"],
+    },
+    onClick: { action: "clicked" },
   },
   args: { primary: false }, // default value
 };
@@ -26,27 +28,27 @@ type Story = StoryObj<typeof Button>;
 export const Primary: Story = {
   args: {
     primary: true,
-    label: 'Button',
+    label: "Button",
   },
 };
 
 export const Secondary: Story = {
   args: {
     primary: false,
-    label: 'Button',
+    label: "Button",
   },
 };
 
 export const Large: Story = {
   args: {
-    label: 'Button',
-    size: 'large',
+    label: "Button",
+    size: "large",
   },
 };
 
 export const Small: Story = {
   args: {
-    label: 'Button',
-    size: 'small',
+    label: "Button",
+    size: "small",
   },
 };

@@ -8,6 +8,7 @@
 import "vuetify/styles";
 
 // Composables
+import { appva } from "@/branding/blueprints";
 import { createVuetify } from "vuetify";
 import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 
@@ -20,14 +21,5 @@ export default createVuetify({
       mdi,
     },
   },
-  theme: {
-    themes: {
-      light: {
-        colors: {
-          primary: "#1867C0",
-          secondary: "#5CBBF6",
-        },
-      },
-    },
-  },
+  blueprint: appva,
 });

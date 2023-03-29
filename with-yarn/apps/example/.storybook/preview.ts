@@ -25,8 +25,10 @@ const preview: Preview = {
         icon: "paintbrush",
         // Array of plain string values or MenuItem shape
         items: [
-          { value: "light", title: "Light", left: "🌞" },
-          { value: "dark", title: "Dark", left: "🌛" },
+          { value: "green-light", title: "Light (green)", left: "🌞" },
+          { value: "green-dark", title: "Dark (green)", left: "🌛" },
+          { value: "smoke-light", title: "Light (smoke blue)", left: "🌞" },
+          { value: "smoke-dark", title: "Dark (smoke blue)", left: "🌛" },
         ],
         // Change title based on selected value
         dynamicTitle: true,

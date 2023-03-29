@@ -16,7 +16,6 @@ const props = defineProps<{
   label: string;
   primary?: boolean;
   size?: "x-small" | "small" | "regular" | "large" | "x-large";
-  backgroundColor?: string;
 }>();
 
 const emit = defineEmits<{ (e: "click"): void }>();
