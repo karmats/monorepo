@@ -52,7 +52,7 @@
   "module": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
   "author": "Mats Roshauw",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "scripts": {
     "build": "vite build && yarn build:types",
     "build:types": "tsc"

@@ -11,9 +11,8 @@ const meta: Meta<typeof Button> = {
   argTypes: {
     size: {
       control: "select",
-      options: ["x-small", "small", "regular", "large", "x-large"],
+      options: ["x-small", "small", "default", "large", "x-large"],
     },
-    onClick: { action: "clicked" },
   },
   args: { primary: false }, // default value
 };

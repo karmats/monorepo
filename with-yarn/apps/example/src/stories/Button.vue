@@ -15,7 +15,7 @@ import { computed } from "vue";
 const props = defineProps<{
   label: string;
   primary?: boolean;
-  size?: "x-small" | "small" | "regular" | "large" | "x-large";
+  size?: "x-small" | "small" | "default" | "large" | "x-large";
 }>();
 
 const emit = defineEmits<{ (e: "click"): void }>();
