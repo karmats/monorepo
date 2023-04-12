@@ -7,5 +7,11 @@
   "author": "Mats Roshauw <mats.roshauw@appva.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": ["packages/*", "apps/*"]
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "dependencies": {
+    "@changesets/cli": "^2.26.1"
+  }
 }
