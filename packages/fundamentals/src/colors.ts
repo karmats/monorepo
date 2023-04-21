@@ -83,4 +83,16 @@ export const colors = {
     "90": { value: "#6A1B9A" },
     "100": { value: "#4A148C" },
   },
+  teal: {
+    "10": { value: "#E0F2F1" },
+    "20": { value: "#B2DFDB" },
+    "30": { value: "#80CBC4" },
+    "40": { value: "#4DB6AC" },
+    "50": { value: "#26A69A" },
+    "60": { value: "#009688" },
+    "70": { value: "#00897B" },
+    "80": { value: "#00796B" },
+    "90": { value: "#00695C" },
+    "100": { value: "#004D40" },
+  },
 };
