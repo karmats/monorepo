@@ -7,6 +7,11 @@
   "author": "Mats Roshauw <mats.roshauw@appva.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "release": "yarn build:fundamentals && yarn build:vue-lib",
+    "build:fundamentals": "yarn workspace @karmats/fundamentals build",
+    "build:vue-lib": "yarn workspace @karmats/vue-lib build"
+  },
   "workspaces": [
     "packages/*",
     "apps/*"

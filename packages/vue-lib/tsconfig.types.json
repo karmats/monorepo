@@ -5,6 +5,8 @@
     "declaration": true,
     "outDir": "dist/types",
     "baseUrl": ".",
-    "lib": ["ESNext", "DOM"]
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "types": ["vite/client"]
   }
 }
