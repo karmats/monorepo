@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "images"],
   "compilerOptions": {
     "emitDeclarationOnly": true,
     "declaration": true,
