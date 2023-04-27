@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "release": "yarn build:fundamentals && yarn build:vue-lib",
+    "release": "yarn build:fundamentals && yarn build:vue-lib && changeset publish",
     "build:fundamentals": "yarn workspace @karmats/fundamentals build",
     "build:vue-lib": "yarn workspace @karmats/vue-lib build"
   },
