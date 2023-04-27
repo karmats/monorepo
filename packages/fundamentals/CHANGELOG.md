@@ -1,5 +1,11 @@
 # @karmats/fundamentals
 
+## 1.0.2
+
+### Patch Changes
+
+- f23aafd: Add images
+
 ## 1.0.1
 
 ### Patch Changes

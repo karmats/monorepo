@@ -1,6 +1,6 @@
 {
   "name": "@karmats/fundamentals",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fundamental UI components such as colors and icons",
   "type": "module",
   "files": [
