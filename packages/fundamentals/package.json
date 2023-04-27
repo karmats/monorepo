@@ -4,7 +4,8 @@
   "description": "Fundamental UI components such as colors and icons",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "images"
   ],
   "exports": {
     ".": {
@@ -61,6 +62,6 @@
     "@mdi/js": "^7.1.96",
     "tsc": "^2.0.4",
     "typescript": "^4.9.5",
-    "vite": "^4.1.4"
+    "vite": "^4.3.3"
   }
 }

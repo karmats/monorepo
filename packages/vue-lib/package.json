@@ -17,7 +17,7 @@
     "./style.css": "./dist/style.css"
   },
   "scripts": {
-    "build": "yarn clean && vue-tsc && vite build && yarn build:types && yarn changeset publish",
+    "build": "yarn clean && vue-tsc && vite build && yarn build:types",
     "build:types": "vue-tsc --project tsconfig.types.json",
     "clean": "rm -rf dist"
   },
