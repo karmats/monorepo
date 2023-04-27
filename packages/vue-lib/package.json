@@ -1,6 +1,6 @@
 {
   "name": "@karmats/vue-lib",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "files": [
     "dist"
