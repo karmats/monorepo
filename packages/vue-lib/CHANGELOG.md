@@ -1,5 +1,17 @@
 # @karmats/vue-lib
 
+## 1.1.0
+
+### Minor Changes
+
+- 944604b: Removed unused colors.
+  Add new ButtonCounter component.
+
+### Patch Changes
+
+- Updated dependencies [944604b]
+  - @karmats/fundamentals@1.0.3
+
 ## 1.0.0
 
 ### Major Changes
