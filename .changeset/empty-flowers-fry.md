@@ -4,3 +4,4 @@
 ---
 
 Removed unused colors.
+Add new ButtonCounter component.
