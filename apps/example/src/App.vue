@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <AppvaButton size="s">Hello monorepo</AppvaButton>
-      <ButtonCounter />
+      <ButtonCounter size="l" />
       <p>x: {{ x }}, y: {{ y }}</p>
 
       <div v-for="(scale, name) in colors">
