@@ -2,13 +2,20 @@
   <v-app>
     <v-main>
       <AppvaButton size="s">Hello monorepo</AppvaButton>
+      <ButtonCounter />
       <p>x: {{ x }}, y: {{ y }}</p>
 
       <div v-for="(scale, name) in colors">
         <h2 class="text-h6">{{ name }}</h2>
         <ul>
           <li v-for="color in scale">
-            <div :style="{ backgroundColor: color.value, minWidth:'200px', minHeight: '40px' }" />
+            <div
+              :style="{
+                backgroundColor: color.value,
+                minWidth: '200px',
+                minHeight: '40px',
+              }"
+            />
           </li>
         </ul>
       </div>
@@ -31,7 +38,7 @@
 </template>
 
 <script setup lang="ts">
-import { AppvaButton, useMouse } from "@karmats/vue-lib";
+import { AppvaButton, ButtonCounter, useMouse } from "@karmats/vue-lib";
 import { colors } from "@karmats/fundamentals/colors";
 import * as icons from "@karmats/fundamentals/icons";
 
