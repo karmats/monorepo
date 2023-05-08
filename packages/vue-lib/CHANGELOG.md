@@ -1,5 +1,11 @@
 # @karmats/vue-lib
 
+## 1.1.1
+
+### Patch Changes
+
+- caaaa20: Add props to ButtonCounter component
+
 ## 1.1.0
 
 ### Minor Changes
