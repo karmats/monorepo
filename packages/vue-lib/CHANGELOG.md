@@ -1,5 +1,11 @@
 # @karmats/vue-lib
 
+## 1.2.0
+
+### Minor Changes
+
+- 3c72779: Remove private for release
+
 ## 1.1.1
 
 ### Patch Changes
