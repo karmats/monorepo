@@ -7,7 +7,6 @@ const meta: Meta<typeof Button> = {
   title: "Example/Button",
   component: Button,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/7.0/vue/writing-docs/docs-page
-  tags: ["autodocs"],
   argTypes: {
     size: {
       control: "select",
