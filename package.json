@@ -8,7 +8,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "ci": "yarn install --frozen-lockfile",
     "release": "yarn build:fundamentals && yarn build:vue-lib && changeset publish",
+    "build:packages": "yarn build:fundamentals && yarn build:vue-lib",
     "build:fundamentals": "yarn workspace @karmats/fundamentals build",
     "build:vue-lib": "yarn workspace @karmats/vue-lib build"
   },
