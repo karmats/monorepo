@@ -1,0 +1,27 @@
+# ################################################################
+# Template workflow for pull requests. Includes all checks that
+# needs to pass for a Pull Request to be mergable.
+# ################################################################
+name: pull-request
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: yarn ci
+
+      - name: Build packages
+        run: yarn build:packages

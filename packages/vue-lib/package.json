@@ -1,6 +1,7 @@
 {
   "name": "@karmats/vue-lib",
   "version": "1.2.0",
+  "license": "MIT",
   "files": [
     "dist"
   ],
