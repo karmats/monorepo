@@ -5,6 +5,7 @@ import Button from "./Button.vue";
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/vue/writing-stories/introduction
 const meta: Meta<typeof Button> = {
   title: "Example/Button",
+  tags: ['autodocs'],
   component: Button,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/7.0/vue/writing-docs/docs-page
   argTypes: {

@@ -1,7 +1,7 @@
 <template>
   <v-app :theme="theme" :full-height="false" class="storybook-app">
     <v-main>
-      <slot name="story"></slot>
+      <slot></slot>
     </v-main>
   </v-app>
 </template>
