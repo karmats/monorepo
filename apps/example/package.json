@@ -7,11 +7,13 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "licenses:generate-json": "license-json --output=./src/thrid-party-info.json --exclude=@karmats/fundamentals --exclude=@karmats/vue-lib --exclude=@karmats/scripts"
   },
   "dependencies": {
     "@karmats/fundamentals": "*",
     "@karmats/vue-lib": "*",
+    "@karmats/scripts": "*",
     "@mdi/font": "7.2.96",
     "roboto-fontface": "*",
     "vue": "^3.3.4",
