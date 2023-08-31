@@ -1,8 +1,12 @@
 {
   "include": ["src/**/*", "images"],
   "compilerOptions": {
+    "target": "ESNext",
     "emitDeclarationOnly": true,
     "declaration": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "outDir": "./dist",
     "lib": ["ESNext", "DOM"]
   }
