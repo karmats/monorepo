@@ -1,0 +1,13 @@
+{
+  "name": "@karmats/scripts",
+  "version": "0.0.1",
+  "description": "Common scripts",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "license-json": "./license-json/index.mjs"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
