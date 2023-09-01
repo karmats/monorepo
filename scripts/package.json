@@ -1,6 +1,6 @@
 {
   "name": "@karmats/scripts",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Common scripts",
   "license": "MIT",
   "type": "module",
