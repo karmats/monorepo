@@ -59,7 +59,6 @@
     "build:types": "tsc"
   },
   "devDependencies": {
-    "@mdi/js": "^7.2.96",
     "tsc": "^2.0.4",
     "typescript": "^5.2.2",
     "vite": "^4.4.9"
