@@ -21,9 +21,11 @@
     "build:types": "vue-tsc --project tsconfig.types.json",
     "clean": "rm -rf dist"
   },
-  "peerDependencies": {
-    "vue": "^3.3.4",
+  "dependencies": {
     "@karmats/fundamentals": "*"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@babel/types": "^7.22.11",
