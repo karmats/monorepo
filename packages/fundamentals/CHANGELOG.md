@@ -1,5 +1,11 @@
 # @karmats/fundamentals
 
+## 1.2.0
+
+### Minor Changes
+
+- 18d570b: Don't include the @mdi/js icons
+
 ## 1.1.0
 
 ### Minor Changes
