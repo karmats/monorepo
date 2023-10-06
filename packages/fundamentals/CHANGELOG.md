@@ -1,5 +1,11 @@
 # @karmats/fundamentals
 
+## 1.1.0
+
+### Minor Changes
+
+- 49f938b: New colors for data visualization
+
 ## 1.0.3
 
 ### Patch Changes
