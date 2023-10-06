@@ -71,4 +71,20 @@ export const colors = {
     "90": { value: "#1b2537" },
     "100": { value: "#101826" },
   },
+  blue: {
+    "40": { value: "#1f80ff" },
+    "60": { value: "#0052cc" },
+  },
+  orange: {
+    "40": { value: "#ff9757" },
+    "60": { value: "#e05600" },
+  },
+  purple: {
+    "40": { value: "#9f74c8" },
+    "60": { value: "#8b58bd" },
+  },
+  pink: {
+    "40": { value: "#df398a" },
+    "60": { value: "#c13e7d" },
+  },
 };

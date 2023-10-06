@@ -21,7 +21,7 @@
     "build:types": "vue-tsc --project tsconfig.types.json",
     "clean": "rm -rf dist"
   },
-  "dependencies": {
+  "peerDependencies": {
     "vue": "^3.3.4",
     "@karmats/fundamentals": "*"
   },
