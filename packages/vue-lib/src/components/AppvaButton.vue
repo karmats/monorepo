@@ -1,7 +1,7 @@
 <template>
   <button
-    class="btn"
-    :class="{ 'btn-large': size === 'l', 'btn-small': size === 's' }"
+    class="button"
+    :class="{ 'button-large': size === 'l', 'button-small': size === 's' }"
   >
     <slot></slot>
   </button>
@@ -11,7 +11,7 @@ import { colors } from "@karmats/fundamentals/colors";
 defineProps<{ size: "l" | "s" }>();
 </script>
 <style scoped>
-.btn {
+.button {
   background-color: v-bind(colors.primary[70].value);
   border: none;
   color: white;
@@ -21,7 +21,7 @@ defineProps<{ size: "l" | "s" }>();
   display: inline-block;
   font-size: 16px;
 }
-.btn.btn-large {
+.button.button-large {
   padding: 16px 32px;
 }
 </style>
