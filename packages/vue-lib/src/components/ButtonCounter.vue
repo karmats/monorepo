@@ -1,6 +1,6 @@
 <template>
-  <AppvaButton @click="initialCount++" :size="size"
-    >You clicked me {{ initialCount }} times.</AppvaButton
+  <AppvaButton @click="count++" :size="size"
+    >You clicked me {{ count }} times.</AppvaButton
   >
 </template>
 
