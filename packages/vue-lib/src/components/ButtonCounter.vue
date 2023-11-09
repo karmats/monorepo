@@ -8,7 +8,13 @@
 import AppvaButton from "./AppvaButton.vue";
 import { ref } from "vue";
 
-defineProps<{ size: "l" | "s" }>();
+const props = withDefaults(
+  defineProps<{ size: "l" | "s"; initialCount: number }>(),
+  {
+    size: "l",
+    initialCount: 0,
+  }
+);
 
-const count = ref(0);
+const count = ref(props.initialCount);
 </script>
