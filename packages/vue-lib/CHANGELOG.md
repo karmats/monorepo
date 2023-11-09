@@ -1,5 +1,12 @@
 # @karmats/vue-lib
 
+## 2.0.1
+
+### Patch Changes
+
+- 7eb352e: Added initial count prop on count component
+- 3234287: Follow code standards for CSS classnames
+
 ## 2.0.0
 
 ### Patch Changes
