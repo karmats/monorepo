@@ -55,11 +55,10 @@
   "author": "Mats Roshauw",
   "license": "MIT",
   "scripts": {
-    "build": "vite build && yarn build:types",
+    "build": "vite build && npm run build:types",
     "build:types": "tsc"
   },
   "devDependencies": {
-    "tsc": "^2.0.4",
     "typescript": "^5.2.2",
     "vite": "^4.4.9"
   }
