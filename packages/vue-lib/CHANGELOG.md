@@ -1,5 +1,16 @@
 # @karmats/vue-lib
 
+## 2.1.0
+
+### Minor Changes
+
+- c2924d0: Change package manager from yarn to npm
+
+### Patch Changes
+
+- Updated dependencies [c2924d0]
+  - @karmats/fundamentals@1.3.0
+
 ## 2.0.1
 
 ### Patch Changes

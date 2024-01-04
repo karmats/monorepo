@@ -1,5 +1,11 @@
 # @karmats/fundamentals
 
+## 1.3.0
+
+### Minor Changes
+
+- c2924d0: Change package manager from yarn to npm
+
 ## 1.2.0
 
 ### Minor Changes
