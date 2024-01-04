@@ -1,23 +1,23 @@
 {
   "name": "monorepo",
   "version": "1.0.0",
-  "description": "Monorepo with yarn",
+  "description": "Monorepo with npm",
   "repository": "git@github.com:karmats/monorepo.git",
   "author": "Mats Roshauw <mats.roshauw@appva.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "ci": "yarn install --frozen-lockfile",
-    "release": "yarn build:fundamentals && yarn build:vue-lib && changeset publish",
-    "storybook": "yarn workspace example storybook",
-    "build:packages": "yarn build:fundamentals && yarn build:vue-lib",
-    "build:fundamentals": "yarn workspace @karmats/fundamentals build",
-    "build:vue-lib": "yarn workspace @karmats/vue-lib build"
+    "release": "npm run build:packages && changeset publish",
+    "storybook": "npm run storybook --workspace=example",
+    "build:packages": "npm run build:fundamentals && npm run build:vue-lib",
+    "build:fundamentals": "npm run build --workspace=@karmats/fundamentals",
+    "build:vue-lib": "npm run build --workspace=@karmats/vue-lib"
   },
   "workspaces": [
-    "packages/*",
+    "packages/fundamentals",
+    "packages/vue-lib",
     "scripts/",
-    "apps/*"
+    "apps/example"
   ],
   "dependencies": {
     "@changesets/cli": "^2.26.2"

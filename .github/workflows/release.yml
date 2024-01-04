@@ -23,12 +23,12 @@ jobs:
           scope: '@karmats'
 
       - name: Install Dependencies
-        run: yarn
+        run: npm ci
 
       - name: Create Release Pull Request or Publish to github 
         uses: changesets/action@v1
         with:
-          publish: yarn release
+          publish: npm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
