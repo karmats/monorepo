@@ -23,10 +23,10 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
     extensions: [
+      '.mjs',
       '.js',
       '.json',
       '.jsx',
-      '.mjs',
       '.ts',
       '.tsx',
       '.vue',
