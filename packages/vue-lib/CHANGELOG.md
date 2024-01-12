@@ -1,5 +1,13 @@
 # @karmats/vue-lib
 
+## 2.1.1
+
+### Patch Changes
+
+- 44f3184: Upgrade dependencies
+- Updated dependencies [44f3184]
+  - @karmats/fundamentals@1.3.1
+
 ## 2.1.0
 
 ### Minor Changes
