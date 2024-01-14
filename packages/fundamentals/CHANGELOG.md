@@ -1,5 +1,11 @@
 # @karmats/fundamentals
 
+## 1.3.1
+
+### Patch Changes
+
+- 44f3184: Upgrade dependencies
+
 ## 1.3.0
 
 ### Minor Changes
