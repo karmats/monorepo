@@ -1,0 +1,21 @@
+{
+  "name": "@karmats/material",
+  "version": "1.0.0",
+  "description": "Test for material web components",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "build2": "rollup -p @rollup/plugin-node-resolve index.js -o bundle.js"
+  },
+  "author": "Mats",
+  "license": "MIT",
+  "dependencies": {
+    "@karmats/fundamentals": "*",
+    "@material/web": "^1.1.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.9.0",
+    "vite": "^5.0.11"
+  }
+}

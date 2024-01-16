@@ -9,13 +9,13 @@
   "scripts": {
     "release": "npm run build:packages && changeset publish",
     "storybook": "npm run storybook --workspace=example",
-    "build:packages": "npm run build:fundamentals && npm run build:vue-lib",
+    "build:packages": "npm run build:fundamentals && npm run build:vue-lib && npm run build:material",
     "build:fundamentals": "npm run build --workspace=@karmats/fundamentals",
-    "build:vue-lib": "npm run build --workspace=@karmats/vue-lib"
+    "build:vue-lib": "npm run build --workspace=@karmats/vue-lib",
+    "build:material": "npm run build --workspace=@karmats/material"
   },
   "workspaces": [
-    "packages/fundamentals",
-    "packages/vue-lib",
+    "packages/*",
     "scripts/",
     "apps/example"
   ],

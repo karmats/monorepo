@@ -1,0 +1,103 @@
+:root {
+  --md-sys-color-primary: #07800a;
+  --md-sys-color-secondary: #07800a;
+  --md-ref-typeface-brand: "Museo Sans";
+  --md-ref-typeface-plain: "Roboto";
+}
+body {
+  font-family: Roboto;
+  background: #fafafa;
+  margin: 0;
+}
+h1 {
+  font-size: 34px;
+  font-weight: 400;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
+  opacity: 0.87;
+}
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block-end: 2rem;
+}
+.top-container p {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  opacity: 0.6;
+  margin: 0;
+}
+.wrapper {
+  max-width: 420px;
+  margin: 1rem auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.12);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.login-form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.separator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.separator span {
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(16, 24, 38, 0.12);
+}
+.separator p {
+  padding: 0px 16px;
+  color: rgba(16, 24, 38, 0.6);
+}
+.one-click-login-button {
+  --md-filled-button-container-color: rgba(0, 0, 0, 0.12);
+  --md-filled-button-label-text-color: rgba(0, 0, 0, 0.87);
+  --md-sys-color-on-primary: rgba(0, 0, 0, 0.87);
+  --md-focus-ring-color: rgba(0, 0, 0, 0.87);
+  --md-filled-button-icon-size: 24px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f3f3;
+  flex: 1 0 auto;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: auto;
+}
+.footer-wrapper a {
+  text-decoration: none;
+  color: #07800a;
+}
+.footer-wrapper a:hover {
+  text-decoration: underline;
+}
