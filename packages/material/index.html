@@ -5,19 +5,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <link
-      rel="stylesheet"
-      href="./dist/style.css"
-    />
+    <link rel="stylesheet" href="./dist/style.css" />
     <style>
       :root {
         --md-sys-color-primary: #07800a;
         --md-sys-color-secondary: #07800a;
         --md-ref-typeface-brand: "Museo Sans";
-        --md-ref-typeface-plain: "Roboto";
+        --md-ref-typeface-plain: Roboto;
       }
       body {
-        font-family: Roboto;
+        font-family: var(----md-ref-typeface-plain);
         background: #fafafa;
         margin: 0;
       }
@@ -120,7 +117,7 @@
 
     <div class="main-container">
       <div class="top-container">
-        <img src="./dist/images/logo.svg">
+        <img src="./dist/images/logo.svg" />
         <p>Västerborg kommun</p>
       </div>
       <div class="wrapper">
@@ -195,12 +192,11 @@
     <script>
       document.querySelector("form").addEventListener("submit", (e) => {
         e.preventDefault();
-        const username = e.target.querySelector("#username");
-        const password = e.target.querySelector("#password");
+        const form = e.currentTarget;
         if (username.value === "test") {
-          username.setAttribute("error", true);
-          password.setAttribute("error", true);
-          password.setAttribute(
+          form.username.setAttribute("error", true);
+          form.password.setAttribute("error", true);
+          form.password.setAttribute(
             "error-text",
             "Felaktigt användarnamn eller lösenord"
           );
