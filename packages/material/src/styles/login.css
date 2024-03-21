@@ -1,16 +1,19 @@
 :root {
-  --md-sys-color-primary: #07800a;
-  --md-sys-color-secondary: #07800a;
+  --md-sys-color-primary: #404e68;
+  --md-sys-color-secondary: #404e68;
   --md-ref-typeface-brand: "Museo Sans";
-  --md-ref-typeface-plain: "Roboto";
+  --md-ref-typeface-plain: Roboto;
+  --md-focus-ring-duration: 0s;
+  --md-dialog-container-color: white;
+  --md-dialog-container-shape: 0.5rem;
 }
 body {
-  font-family: Roboto;
+  font-family: var(--md-ref-typeface-plain);
   background: #fafafa;
   margin: 0;
 }
 h1 {
-  font-size: 34px;
+  font-size: 2rem;
   font-weight: 400;
   margin-block-start: 16px;
   margin-block-end: 16px;
@@ -21,39 +24,65 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+.main-container > svg {
+  flex: 0 0 auto;
+}
 .top-container {
   display: flex;
   flex-direction: column;
+  flex: 1 0 auto;
   align-items: center;
+  justify-content: end;
   gap: 0.5rem;
-  margin-block-end: 2rem;
+  padding-block-start: 1.5rem;
 }
 .top-container p {
-  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   opacity: 0.6;
   margin: 0;
 }
 .wrapper {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.wrapper > * {
   max-width: 420px;
-  margin: 1rem auto;
-  background: #ffffff;
-  padding: 32px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.12);
+  min-width: 320px;
 }
 .container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin: 1rem auto;
+  background: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid lightgrey;
+}
+.login-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
 }
 .login-form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 .login-form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.login-form-actions {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -85,14 +114,13 @@ h1 {
   flex-direction: column;
   align-items: center;
   background: #f3f3f3;
-  flex: 1 0 auto;
+  flex: 0 0 44px;
 }
 .footer-wrapper {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
   align-items: center;
-  margin-top: auto;
 }
 .footer-wrapper a {
   text-decoration: none;
@@ -100,4 +128,13 @@ h1 {
 }
 .footer-wrapper a:hover {
   text-decoration: underline;
+}
+.dialog-title {
+  padding: 0.5rem 1rem;
+}
+.dialog-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }

@@ -1,128 +1,25 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <link rel="stylesheet" href="./dist/style.css" />
-    <style>
-      :root {
-        --md-sys-color-primary: #07800a;
-        --md-sys-color-secondary: #07800a;
-        --md-ref-typeface-brand: "Museo Sans";
-        --md-ref-typeface-plain: Roboto;
-      }
-      body {
-        font-family: var(----md-ref-typeface-plain);
-        background: #fafafa;
-        margin: 0;
-      }
-      h1 {
-        font-size: 34px;
-        font-weight: 400;
-        margin-block-start: 16px;
-        margin-block-end: 16px;
-        opacity: 0.87;
-      }
-      .main-container {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-      .top-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        margin-block-end: 2rem;
-      }
-      .top-container p {
-        font-size: 2rem;
-        font-style: normal;
-        font-weight: 600;
-        opacity: 0.6;
-        margin: 0;
-      }
-      .wrapper {
-        max-width: 420px;
-        margin: 1rem auto;
-        background: #ffffff;
-        padding: 32px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.12);
-      }
-      .container {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-      }
-      .login-form {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-      .login-form-item {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-      .separator {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 1rem;
-      }
-      .separator span {
-        flex-grow: 1;
-        height: 1px;
-        background-color: rgba(16, 24, 38, 0.12);
-      }
-      .separator p {
-        padding: 0px 16px;
-        color: rgba(16, 24, 38, 0.6);
-      }
-      .one-click-login-button {
-        --md-filled-button-container-color: rgba(0, 0, 0, 0.12);
-        --md-filled-button-label-text-color: rgba(0, 0, 0, 0.87);
-        --md-sys-color-on-primary: rgba(0, 0, 0, 0.87);
-        --md-focus-ring-color: rgba(0, 0, 0, 0.87);
-        --md-filled-button-icon-size: 24px;
-      }
-      .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: #f3f3f3;
-        flex: 1 0 auto;
-      }
-      .footer-wrapper {
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-        align-items: center;
-        margin-top: auto;
-      }
-      .footer-wrapper a {
-        text-decoration: none;
-        color: #07800a;
-      }
-      .footer-wrapper a:hover {
-        text-decoration: underline;
-      }
-    </style>
   </head>
   <body>
     <script src="./dist/bundle.js"></script>
 
     <div class="main-container">
       <div class="top-container">
-        <img src="./dist/images/logo.svg" />
+        <img src="./dist/images/logo.svg" height="32" />
         <p>Västerborg kommun</p>
       </div>
       <div class="wrapper">
         <div class="container">
-          <h1>Logga in i Analytics</h1>
+          <h1>Logga in</h1>
           <form class="login-form">
             <div class="login-form-item">
               <label for="username">Användarnamn</label>
@@ -144,36 +41,13 @@
                 required
               ></md-outlined-text-field>
             </div>
-            <md-filled-button id="login">Login</md-filled-button>
+            <div class="login-form-actions">
+              <md-filled-button id="login">Login</md-filled-button>
+              <md-text-button id="cancel" type="button">Avbryt</md-text-button>
+            </div>
           </form>
         </div>
-        <div class="separator">
-          <span></span>
-          <p>Eller</p>
-          <span></span>
-        </div>
-        <div class="container">
-          <md-filled-button class="one-click-login-button" trailing-icon>
-            Logga in med SITHS kort
-            <!-- <span slot="icon" class="material-symbols-outlined">
-            credit_card
-          </span> -->
-            <svg slot="icon" height="24" viewBox="0 -960 960 960" width="24">
-              <path
-                d="M880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720Zm-720 80h640v-80H160v80Zm0 160v240h640v-240H160Zm0 240v-480 480Z"
-              />
-            </svg>
-          </md-filled-button>
-          <md-filled-button class="one-click-login-button" trailing-icon
-            >Logga in med Freja eID
-            <!-- <span slot="icon" class="material-symbols-outlined"> mail </span> -->
-            <svg slot="icon" height="24" viewBox="0 -960 960 960" width="24">
-              <path
-                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
-              />
-            </svg>
-          </md-filled-button>
-        </div>
+        <md-text-button type="button">Glömt lösenordet</md-text-button>
       </div>
       <svg viewBox="0 0 2581 214" fill="none">
         <path
@@ -184,10 +58,39 @@
       <footer class="footer">
         <div class="footer-wrapper">
           <span>@2024 Vitec Appva AB</span>
-          <md-text-button>Om Appva Analytics</md-text-button>
-          <md-text-button>Hjälp</md-text-button>
+          <md-text-button id="about-button" type="button"
+            >Om Appva Identityserver</md-text-button
+          >
+          <md-text-button type="button">Hjälp</md-text-button>
         </div>
       </footer>
+      <md-dialog
+        id="about-dialog"
+        class="about-dialog"
+        aria-label="Om appva identity server"
+      >
+        <span class="dialog-title" slot="headline">
+          <span style="flex: 1"></span>
+          <md-icon-button
+            id="close-dialog-button"
+            form="form-about"
+            value="close"
+            aria-label="Close dialog"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </md-icon-button>
+        </span>
+        <form id="form-about" class="dialog-content" slot="content" method="dialog">Hello world</form>
+      </md-dialog>
     </div>
     <script>
       document.querySelector("form").addEventListener("submit", (e) => {
@@ -201,6 +104,10 @@
             "Felaktigt användarnamn eller lösenord"
           );
         }
+      });
+      const dialog = document.querySelector("#about-dialog");
+      document.querySelector("#about-button").addEventListener("click", () => {
+        dialog.show();
       });
     </script>
   </body>
