@@ -6,18 +6,37 @@
   --md-focus-ring-duration: 0s;
   --md-dialog-container-color: white;
   --md-dialog-container-shape: 0.5rem;
+  --md-sys-typescale-headline-font: "Museo Sans";
+  --md-sys-typescale-title-font: "Museo Sans";
+
+  --va-divider-color: rgba(16, 24, 38, 0.12);
+  --va-text-medium-emphasis-color: rgba(0, 0, 0, 0.6);
+  --va-text-high-emphasis-color: rgba(0, 0, 0, 0.87);
 }
 body {
   font-family: var(--md-ref-typeface-plain);
+  font-weight: 400;
+  letter-spacing: 0.5px;
   background: #fafafa;
   margin: 0;
+  color: var(--va-text-high-emphasis-color);
 }
 h1 {
+  font-family: var(--md-sys-typescale-title-font);
   font-size: 2rem;
   font-weight: 400;
   margin-block-start: 16px;
   margin-block-end: 16px;
-  opacity: 0.87;
+}
+form {
+  margin-block-end: 0;
+}
+md-text-button > span,
+md-filled-button > span {
+  letter-spacing: 1.25px;
+}
+label[for] {
+  font-family: var(--md-sys-typescale-title-font);
 }
 .main-container {
   height: 100vh;
@@ -35,11 +54,11 @@ h1 {
   justify-content: end;
   gap: 0.5rem;
   padding-block-start: 1.5rem;
+  margin-block-end: 1rem;
 }
 .top-container p {
   font-style: normal;
-  font-weight: 600;
-  opacity: 0.6;
+  color: var(--va-text-medium-emphasis-color);
   margin: 0;
 }
 .wrapper {
@@ -57,20 +76,62 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin: 1rem auto;
+  margin: 1rem;
   background: #ffffff;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   border-radius: 8px;
   border: 1px solid lightgrey;
 }
 .login-card {
+  color: initial;
+  text-decoration: none;
   display: flex;
   flex-direction: row;
-  border: 1px solid lightgrey;
+  outline: 1px solid lightgrey;
+  outline-offset: -1px;
   border-radius: 8px;
   align-items: center;
   justify-content: start;
   gap: 1rem;
+  transition: outline-color 0.2s;
+  overflow: hidden;
+}
+.login-card:hover {
+  text-decoration: underline;
+  outline-color: grey;
+}
+.login-card:hover span:last-child {
+  opacity: 1;
+}
+.login-card:hover img {
+  transform: scale(1.2);
+}
+.login-card > .login-card-image-wrapper {
+  flex: 0 0 80px;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  z-index: 1;
+  background-color: #052c3f;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-card > .login-card-image-wrapper > img {
+  transition: transform 0.2s;
+}
+.login-card > .login-card-image-wrapper.login-card-image-green {
+  background-color: #07800a;
+}
+.login-card > span:last-child {
+  margin-left: auto;
+  margin-right: 1rem;
+  opacity: 0.38;
+  transition: opacity 0.2s;
+}
+#login-page {
+  animation: 0.5s cubic-bezier(0.25, 0.8, 0.5, 1) slidein;
 }
 .login-form {
   display: flex;
@@ -91,16 +152,17 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 1rem;
+  margin: 0 3rem;
 }
 .separator span {
   flex-grow: 1;
   height: 1px;
-  background-color: rgba(16, 24, 38, 0.12);
+  background-color: var(--va-divider-color);
 }
 .separator p {
   padding: 0px 16px;
-  color: rgba(16, 24, 38, 0.6);
+  margin: 0;
+  color: var(--va-text-medium-emphasis-color);
 }
 .one-click-login-button {
   --md-filled-button-container-color: rgba(0, 0, 0, 0.12);
@@ -137,4 +199,12 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 0;
+}
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

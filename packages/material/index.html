@@ -14,10 +14,47 @@
 
     <div class="main-container">
       <div class="top-container">
-        <img src="./dist/images/logo.svg" height="32" />
+        <img src="./dist/images/logo.svg" height="64" />
         <p>Västerborg kommun</p>
       </div>
-      <div class="wrapper">
+      <div id="login-options-page" class="wrapper">
+        <div class="container">
+          <h1>Hur vill du logga in</h1>
+          <a class="login-card" href="#">
+            <div class="login-card-image-wrapper">
+              <img src="./dist/images/siths.svg" height="60" width="60" />
+            </div>
+            <p>SITHS-kort</p>
+            <span>
+              <img src="./dist/images/icons/chevron-right.svg" />
+            </span>
+          </a>
+          <div class="separator">
+            <span></span>
+            <p>eller</p>
+            <span></span>
+          </div>
+          <a class="login-card" href="#">
+            <div class="login-card-image-wrapper">
+              <img src="./dist/images/freja-eid.svg" height="80" width="80" />
+            </div>
+            <p>Freja e-ID</p>
+            <span>
+              <img src="./dist/images/icons/chevron-right.svg" />
+            </span>
+          </a>
+          <a id="login-username-password" class="login-card" href="#">
+            <div class="login-card-image-wrapper login-card-image-green">
+              <img src="./dist/images/appva-login.svg" height="60" width="60" />
+            </div>
+            <p>Användarnamn och lösenord</p>
+            <span>
+              <img src="./dist/images/icons/chevron-right.svg" />
+            </span>
+          </a>
+        </div>
+      </div>
+      <div id="login-page" class="wrapper" style="display: none">
         <div class="container">
           <h1>Logga in</h1>
           <form class="login-form">
@@ -42,12 +79,16 @@
               ></md-outlined-text-field>
             </div>
             <div class="login-form-actions">
-              <md-filled-button id="login">Login</md-filled-button>
-              <md-text-button id="cancel" type="button">Avbryt</md-text-button>
+              <md-filled-button id="login"><span>Login</span></md-filled-button>
+              <md-text-button id="cancel" type="button"
+                ><span>Avbryt</span></md-text-button
+              >
             </div>
           </form>
         </div>
-        <md-text-button type="button">Glömt lösenordet</md-text-button>
+        <md-text-button type="button"
+          ><span>Glömt lösenordet</span></md-text-button
+        >
       </div>
       <svg viewBox="0 0 2581 214" fill="none">
         <path
@@ -59,9 +100,9 @@
         <div class="footer-wrapper">
           <span>@2024 Vitec Appva AB</span>
           <md-text-button id="about-button" type="button"
-            >Om Appva Identityserver</md-text-button
+            ><span>Om Appva Identityserver</span></md-text-button
           >
-          <md-text-button type="button">Hjälp</md-text-button>
+          <md-text-button type="button"><span>Hjälp</span></md-text-button>
         </div>
       </footer>
       <md-dialog
@@ -77,19 +118,17 @@
             value="close"
             aria-label="Close dialog"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24"
-              viewBox="0 -960 960 960"
-              width="24"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
+            <img src="./dist/images/icons/close.svg" />
           </md-icon-button>
         </span>
-        <form id="form-about" class="dialog-content" slot="content" method="dialog">Hello world</form>
+        <form
+          id="form-about"
+          class="dialog-content"
+          slot="content"
+          method="dialog"
+        >
+          Hello world
+        </form>
       </md-dialog>
     </div>
     <script>
@@ -109,6 +148,17 @@
       document.querySelector("#about-button").addEventListener("click", () => {
         dialog.show();
       });
+
+      document
+        .querySelector("#login-username-password")
+        .addEventListener("click", (e) => {
+          e.preventDefault();
+          const loginPage = document.getElementById("login-page");
+          const loginOptionsPage =
+            document.getElementById("login-options-page");
+          loginPage.style.display = "flex";
+          loginOptionsPage.style.display = "none";
+        });
     </script>
   </body>
 </html>
