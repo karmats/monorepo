@@ -8,6 +8,7 @@
   --md-dialog-container-shape: 0.5rem;
   --md-sys-typescale-headline-font: "Museo Sans";
   --md-sys-typescale-title-font: "Museo Sans";
+  --md-dialog-supporting-text-line-height: 1.5;
 
   --va-divider-color: rgba(16, 24, 38, 0.12);
   --va-text-medium-emphasis-color: rgba(0, 0, 0, 0.6);
@@ -20,6 +21,7 @@ body {
   background: #fafafa;
   margin: 0;
   color: var(--va-text-high-emphasis-color);
+  line-height: 1.5;
 }
 h1 {
   font-family: var(--md-sys-typescale-title-font);
@@ -28,8 +30,21 @@ h1 {
   margin-block-start: 16px;
   margin-block-end: 16px;
 }
+h2 {
+  font-family: var(--md-sys-typescale-title-font);
+  font-weight: 400;
+  font-size: 1rem;
+}
 form {
   margin-block-end: 0;
+}
+hr {
+  width: 100%;
+  color: var(--va-divider-color);
+  height: 0px;
+  max-height: 0px;
+  border-style: solid;
+  border-width: thin 0 0 0;
 }
 md-text-button > span,
 md-filled-button > span {
@@ -37,6 +52,14 @@ md-filled-button > span {
 }
 label[for] {
   font-family: var(--md-sys-typescale-title-font);
+}
+a.a-link {
+  color: green;
+  text-decoration: none;
+  cursor: pointer;
+}
+a.a-link:hover {
+  text-decoration: underline;
 }
 .main-container {
   height: 100vh;
@@ -191,14 +214,52 @@ label[for] {
 .footer-wrapper a:hover {
   text-decoration: underline;
 }
+md-dialog.about-dialog {
+  min-height: 600px;
+}
 .dialog-title {
   padding: 0.5rem 1rem;
 }
 .dialog-content {
+  font-size: 1rem;
+  min-width: 576px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 1rem;
+}
+@media (max-width: 576px) {
+  .dialog-content {
+    min-width: auto;
+  }
+}
+.dialog-content-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dialog-content-contact {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+.dialog-content-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.dialog-content-address {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.dialog-content-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @keyframes slidein {
   from {
