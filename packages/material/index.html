@@ -157,6 +157,12 @@
       </md-dialog>
     </div>
     <script>
+      const togglePage = (pageFromId, pageToId) => {
+        const pageFrom = document.getElementById(pageFromId);
+        const pageTo = document.getElementById(pageToId);
+        pageFrom.style.display = "none";
+        pageTo.style.display = "flex";
+      };
       document.querySelector("form").addEventListener("submit", (e) => {
         e.preventDefault();
         const form = e.currentTarget;
@@ -178,12 +184,12 @@
         .querySelector("#login-username-password")
         .addEventListener("click", (e) => {
           e.preventDefault();
-          const loginPage = document.getElementById("login-page");
-          const loginOptionsPage =
-            document.getElementById("login-options-page");
-          loginPage.style.display = "flex";
-          loginOptionsPage.style.display = "none";
+          togglePage("login-options-page", "login-page");
         });
+
+      document.querySelector("#cancel").addEventListener("click", (e) => {
+        togglePage("login-page", "login-options-page");
+      });
     </script>
   </body>
 </html>
