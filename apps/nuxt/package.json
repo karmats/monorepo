@@ -13,6 +13,7 @@
     "@nuxt/examples-ui": "^0.0.2",
     "nuxt": "^3.11.2",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vuetify-nuxt-module": "^0.13.3"
   }
 }

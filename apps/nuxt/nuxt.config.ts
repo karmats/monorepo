@@ -2,4 +2,5 @@
 export default defineNuxtConfig({
   extends: ["@nuxt/examples-ui"],
   ssr: false,
+  modules: ["vuetify-nuxt-module"],
 });

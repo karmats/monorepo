@@ -4,6 +4,7 @@ const nav = [
   { label: "Home", to: "/" },
   { label: "Example (index)", to: "/example" },
   { label: "Example (a)", to: "/example/a" },
+  { label: "Vuetify", to: "/vuetify" },
   // {
   //   label: "Keyed child",
   //   onClick: () =>
